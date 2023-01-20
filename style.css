@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+/* ---------------------- HEADER ---------------------- */
+
+header{
+    background-color: #EAC926;
+    padding: 20px 10px;
+}
+
+.logo-ml{
+   width: 40%;
+}
+
+.search-bar{
+    display: flex;
+    padding: 5px;
+    background-color: white;
+    color: #666;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.search-bar input{
+    width: 100%;
+    border: none;
+}
+
+.logo-search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.lupa{
+    height: 20px;
+}
+
+.cuotas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+header ul{
+    display: none;
+}
+
+.burger-menu i{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #03264C;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------------------- MAIN ---------------------- */
+main{
+    background-color: #ebebeb;
+}
+
+.banner{
+    width: 100%;
+}
+
+.ultima-visita, .ofertas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 24px;
+    margin: 20px 0px;
+    color: #666;
+}
+
+.img-producto{
+    width: 100%;
+    align-self: center;
+}
+
+.descripcion-card{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+.fa-truck{
+    color: #39b54a;
+    background-color: #FFF;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.precio{
+    font-size: 18px;
+    display: flex;
+    flex-grow: 0.3;
+}
+
+.oferta{
+    color: #39b54a;
+}
+
+.oferta, .descripcion{
+    font-size: 16px;
+}
+
+.descripcion{
+    display: none;
+}
+
+.descripcion-card div{
+    display: flex;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer{
+    text-align: center;
+    width: 250px;
+    margin: 25px 0px;
+}
+
+.card-footer i{
+    font-size: 2em;
+    color: #03264C;
+    margin-bottom: 10px;
+}
+
+/* ---------------------- TABLET ---------------------- */
+
+@media(min-width: 769px){
+    header{
+        padding: 20px 20px 5px 20px;
+    }
+    
+    .logo-ml{
+        width: 25%;
+    }
+    
+    .search-bar{
+        width: 33.33%;
+    }
+
+    .logo-search{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header ul{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    a{
+        color: black;
+    }
+
+    .site{
+        width: 35%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .login-bar{
+        width: 35%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    h1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ultima-visita, .ofertas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card{
+        width: 35%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin-bottom: 40px;
+    }
+
+    .descripcion{
+        display: block;
+        margin-top: 20px;
+        color: #666;
+    }
+
+    .card-footer{
+        width: 100%;
+    }
+}
+
+/* ---------------------- DESKTOP ---------------------- */
+
+@media(min-width: 1280px){
+    .logo-ml{
+        width: 25%;
+    }
+    
+    .card {
+        width: 20%;
+    }
+}
+
+/* ---------------------- FORM ---------------------- */
+
+/* ---------------------- REGISTER FORM ---------------------- */
+
+.register_form{  
+    width: 450px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding: 20px;
+    background-color: #ebebeb;
+    font-size: 15px;
+}
+
+fieldset{
+    border: none;
+}
+
+.datos_personales input, .botones input{ 
+    width: 400px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border: 1px solid #666; 
+    margin: 20px 0px;  
+    padding: 10px;
+}
+
+label{
+    display: block; 
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.datos_usuario input{
+    margin: 10px 20px;
+}
+
+.intereses input{
+    margin: 20px;
+}
+
+.botones input, a input{
+    background-color: #03264C;
+    color: white;
+}
+
+/* ---------------------- LOGIN FORM ---------------------- */
+
+.login_form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.login input{
+    display: flex;
+    align-self: center;
+    width: 700px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border: 1px solid #666; 
+    margin: 20px 0px 40px 0px;  
+    padding: 10px;
+}
+
+a input{
+    display: flex;
+    justify-content: center;
+}

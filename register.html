@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Register</title>
+</head>
+<body>  
+    <div class="register_form">
+        <form action="./index.html">
+            
+            <fieldset class="datos_personales">
+                <input type="text" name="nombre" placeholder="Nombre y apellido"/>
+                <input type="password" name="usuario" placeholder="Nombre de usuario"/>
+                <input type="email" name="email" placeholder="E-mail"/>
+                <label for="fecha">
+                    Fecha de nacimiento
+                    <input type="date" name="fechadenac"/>
+                </label>
+                <input type="text" name="domicilio" placeholder="domicilio"/>
+            </fieldset>
+            
+            <fieldset class="datos_usuario">
+                <label for="perfilusuario">
+                    Perfil de Usuario
+                </label>
+                <input type="radio" name="perfilusuario" value="comprador"/>Comprador
+                <input type="radio" name="perfilusuario" value="vendedor"/>Vendedor
+            </fieldset>
+                
+            <fieldset class="intereses">
+                <label for="intereses">
+                    Intereses
+                </label>
+                <input type="checkbox" name="intereses" value="electro"/>Electro
+                <br>
+                <input type="checkbox" name="intereses" value="moda"/>Moda
+                <br>
+                <input type="checkbox" name="intereses" value="hogar"/>Hogar
+                <br>
+                <input type="checkbox" name="intereses" value="jugueteria"/>Jugueteria
+                <br>
+                <input type="checkbox" name="intereses" value="vidasana"/>Vida sana
+                <br>
+            </fieldset>
+            
+            <fieldset class="botones">    
+                <a href="./home.html"><input type="submit" value="Enviar"/></a>
+                <input type="reset" value="Borrar todo">    
+            </fieldset>  
+        </form>
+    </div>
+</body>
+</html>
